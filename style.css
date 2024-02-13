@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;800&family=Poppins:ital,wght@0,500;0,600;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+html , body{
+    width: 100%;
+    height: 100dvh;
+    scroll-behavior: smooth;
+}
+:root{
+    --color--black: #111111;
+    --color--gray: #F1F1F1;
+    --color--gold: #BF9456;
+    --fw--300: 300;
+    --fw--400: 400;
+    --fw--500: 500;
+    --fw--600: 600;
+    --fw--700: 700;
+    --fs--52: 52px;
+    --fs--48: 48px;
+    --fs--20: 20px;
+    --fs--16: 16px;
+    --fs--12: 12px;
+    --fs--18: 18px;
+    --fs--24: 24px;
+    --fs--34: 34px;
+    --fs--36: 36px;
+}
+.bg-black{
+    background-color: var(--color--black);
+}
+.bg-gold{
+    background-color: var(--color--gold);
+}
+.bg-gray{
+    background-color: var(--color--gray);
+}
+.txt-gold{
+    color: var(--color--gold);
+}
+.fs-52{
+    font-size: var(--fs--52);
+}
+.fs-48{
+    font-size: var(--fs--48);
+}
+.fs-36{
+    font-size: var(--fs--36);
+}
+.fs-34{
+    font-size: var(--fs--34);
+}
+.fs-20{
+    font-size: var(--fs--20);
+}
+.fs-24{
+    font-size: var(--fs--24);
+}
+.fs-18{
+    font-size: var(--fs--18);
+}
+.h-200{
+    height: 250px;
+}
+.hero{
+    width: 100%;
+    height: 100dvh;
+}
+.about{
+    width: 100%;
+    height: auto;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-18{
+    margin-bottom: 18px;
+}
+.mb-26{
+    margin-bottom: 26px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+h3{
+    font-weight: var(--fw--300);
+}
+.txt-span{
+    font-weight: var(--fw--700);
+}
+.b-style{
+    border: 3px solid #BF9456;
+}
+.hero-banner{
+    background-image: url(Assets/image/heroimg-min.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-ground{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(73,73,75,1) 100%, rgba(255,255,255,0.6029864826790091) 100%);
+}
+
+.cta{
+    padding: 16px 58px;
+    background-color: var(--color--gold);
+    color: var(--color--black);
+    border: none;
+    border-radius: 8px;
+    font-weight: var(--fw--700);
+    text-decoration: none;
+}
+.cta:hover{
+    background-color: var(--color--black);
+    color: var(--color--gold);
+}
+
+.parent-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.grid-parents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.grid-parents img {
+    width: 100%;
+    height: 100%;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+.flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 60%;
+}
+.flex-item-right {
+    background-color: #1e90ff;
+    padding: 10px;
+    flex: 40%;
+}
+.testimoinal .bg-ban-img {
+    background-image: url(Assets/image/testi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.banner-7{
+    background-image: url(Assets/image/banner-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#inputEmail4,
+#inputFirstname,
+#inputLastname,
+#phoneNumber {
+    border: 2px solid var(--color--gold);
+    color: #fff;
+}
+.selectopt {
+    border: 2px solid var(--color--gold);
+}
+.cont a{
+    text-decoration: none;
+}
+.navbar-link{
+    text-decoration: none;
+}
+.navbar-link:hover{
+    color: #BF9456!important;
+}
+.firstcta{
+    padding: 16px 22px;
+    background-color: var(--color--gold);
+    color: var(--color--black);
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.firstcta:hover{
+    background-color: var(--color--black);
+  
+    color: var(--color--gold);
+}
+.ullist li a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--color--gold);
+}
+.ullist li a:hover{
+    color: white;
+}
+.ullist li {
+    list-style: none;
+}
+
+/*Responisve*/
+@media only screen and (max-width: 600px) {
+    .hero .logo{
+        width: 80%;
+        height: 80%;
+    }
+    .parent-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .col-box2 h3{
+        font-size: var(--fs--24) !important;
+    }
+    .abouttxt{
+        text-align: right !important;
+    }
+    .aboutimg{
+        width: 100%;
+    }
+    .svglogo{
+        width: 100%;
+    }
+    .grid-parent {
+        grid-template-columns: 1fr;
+    }
+    .grid-parent h3{
+        font-size: var(--fs--16) !important;
+    }
+    .grid-parent p{
+        font-size: var(--fs--12) !important;
+    }
+    .grid-parents {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .grid-parents img {
+        width: 100%;
+    }
+    .paintimg{
+        width: 100%;
+    }
+    .paintsection h3{
+        font-size: var(--fs--24) !important;
+    }
+    .paintsection p{
+        font-size: var(--fs--18);
+    }
+}
+@media only screen and (max-width: 768px) {
+    .hero .logo{
+        width: 100%;
+        height: 100%;
+    }
+    .hero-banner{
+        background-image: url(Assets/image/heroimg-min.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .navpart2{
+       flex-direction: column;
+    }
+    .navpart2 p{
+        text-align: left !important;
+    }
+    .herologo{
+        width: 150px;
+    }
+    .aboutme2 .h4txt{
+        font-size: var(--fs--24);
+    }
+    .parent-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .col-box2{
+        padding: 20px 20px;
+    }
+    .col-box2 h3{
+        font-size: var(--fs--34);
+    }
+    .col-box2 p{
+        font-size: var(--fs--18);
+    }
+    .paintsection h3{
+        font-size: var(--fs--34);
+    }
+    .paintsection p{
+        font-size: var(--fs--18);
+    }
+    .cardimg{
+        width: 10%;
+    }
+    /* .svglogo{
+        padding: 10px;
+    } */
+    .grid-parent {
+        grid-template-columns: 1fr;
+    }
+    .grid-parent h3{
+        font-size: var(--fs--16) !important;
+    }
+    .grid-parent p{
+        font-size: var(--fs--12) !important;
+    }
+    .grid-parents {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .grid-parents img {
+        width: 100%;
+    }
+    .footersection h2{
+        font-size: var(--fs--34);
+    }
+    .footersection p{
+        font-size: var(--fs--16);
+    }
+    .fo2{
+        flex-direction: column;
+    }
+}
